@@ -7,6 +7,7 @@ import crafttweaker.data.IData;
 val bonusChest = LootTables.getTable("minecraft:chests/spawn_bonus_chest");
 
 //remove biomesop fruits
+val bonus_main = bonusChest.getPool("main");
 bonus_main.removeItemEntry(<biomesoplenty:pear>);
 bonus_main.removeItemEntry(<biomesoplenty:peach>);
 bonus_main.removeItemEntry(<biomesoplenty:persimmon>);
@@ -64,22 +65,35 @@ val books = {
 			tag: {"akashictome:definedMod": "xnet"}, 
 			Damage: 0 as short
 		}, 
+		rustic:
+		{
+			id: "rustic:book",
+			Count: 1 as byte, 
+			tag: {"akashictome:definedMod": "rustic"}, 
+			Damage: 0 as short
+		}, 
+		va:
+		{
+			id: "va:vaguide",
+			Count: 1 as byte, 
+			tag: {"akashictome:definedMod": "va"}, 
+			Damage: 0 as short
+		}
 	}
 } as IData;
 guide_book.addItemEntryHelper(<akashictome:tome>.withTag(books) * 1, 1, 1, [], []);
 
 //add modifier
-val starterKit = bonusChest.addPool("starterKit", 2, 6, 0, 0);
-starterKit.addItemEntryHelper(<oeintegration:excavatemodifier> * 1, 1, 1, [count:{min:2,max:64}], []);
+val starterKit = bonusChest.addPool("starterKit", 1, 2, 0, 0);
+starterKit.addItemEntryHelper(<oeintegration:excavatemodifier> * 1, 1, 1, [Functions.setCount(50, 100)], []);
 
 //enchant tools
-val bonus_main = bonusChest.getPool("main");
 bonus_main.removeItemEntry(<minecraft:stone_axe>);
-bonus_main.addItemEntryHelper(<minecraft:stone_axe>.withTag({ench:[{id:28,lvl:5}]}) * 1, 1, 0, [], []);
+bonus_main.addItemEntryHelper(<minecraft:stone_axe>.withTag({ench:[{id:27,lvl:5}]}) * 1, 1, 0, [], []);
 bonus_main.removeItemEntry(<minecraft:wooden_axe>);
-bonus_main.addItemEntryHelper(<minecraft:wooden_axe>.withTag({ench:[{id:28,lvl:5}]}) * 1, 3, 0, [], []);
+bonus_main.addItemEntryHelper(<minecraft:wooden_axe>.withTag({ench:[{id:27,lvl:5}]}) * 1, 3, 0, [], []);
 val bonus_pool1 = bonusChest.getPool("pool1");
 bonus_pool1.removeItemEntry(<minecraft:stone_pickaxe>);
-bonus_pool1.addItemEntryHelper(<minecraft:stone_pickaxe>.withTag({ench:[{id:28,lvl:3}]}) * 1, 1, 0, [], []);
+bonus_pool1.addItemEntryHelper(<minecraft:stone_pickaxe>.withTag({ench:[{id:27,lvl:3}]}) * 1, 1, 0, [], []);
 bonus_pool1.removeItemEntry(<minecraft:wooden_pickaxe>);
-bonus_pool1.addItemEntryHelper(<minecraft:wooden_pickaxe>.withTag({ench:[{id:28,lvl:2}]}) * 1, 3, 0, [], []);
+bonus_pool1.addItemEntryHelper(<minecraft:wooden_pickaxe>.withTag({ench:[{id:27,lvl:2}]}) * 1, 3, 0, [], []);
