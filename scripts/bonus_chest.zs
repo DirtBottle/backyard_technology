@@ -17,17 +17,32 @@ val guide_book = bonusChest.addPool("guide_book", 1, 1, 0, 0);
 val books = {
 	"akashictome:is_morphing": 1 as byte,
 	"akashictome:data": {
-		extrautils2:{
-			id: "extrautils2:book",
-			Count: 1 as byte, 
-			tag:{"akashictome:definedMod": "extrautils2"},
-			Damage: 0 as short
-		},
 		tconstruct:
 		{
 			id: "tconstruct:book",
 			Count: 1 as byte, 
 			tag: {"akashictome:definedMod": "tconstruct"}, 
+			Damage: 0 as short
+		}, 
+		va:
+		{
+			id: "va:vaguide",
+			Count: 1 as byte, 
+			tag: {"akashictome:definedMod": "va"}, 
+			Damage: 0 as short
+		},
+		rustic:
+		{
+			id: "rustic:book",
+			Count: 1 as byte, 
+			tag: {"akashictome:definedMod": "rustic"}, 
+			Damage: 0 as short
+		}, 
+		magneticraft:
+		{
+			id: "magneticraft:guide_book",
+			Count: 1 as byte, 
+			tag: {"akashictome:definedMod": "magneticraft"}, 
 			Damage: 0 as short
 		}, 
 		immersiveengineering: 
@@ -37,13 +52,12 @@ val books = {
 			tag: {"akashictome:definedMod": "immersiveengineering"}, 
 			Damage: 3 as short
 		}, 
-		magneticraft:
-		{
-			id: "magneticraft:guide_book",
+		extrautils2:{
+			id: "extrautils2:book",
 			Count: 1 as byte, 
-			tag: {"akashictome:definedMod": "magneticraft"}, 
+			tag:{"akashictome:definedMod": "extrautils2"},
 			Damage: 0 as short
-		}, 
+		},
 		rftools:
 		{
 			id: "rftools:rftools_manual",
@@ -63,20 +77,6 @@ val books = {
 			id: "xnet:xnet_manual",
 			Count: 1 as byte, 
 			tag: {"akashictome:definedMod": "xnet"}, 
-			Damage: 0 as short
-		}, 
-		rustic:
-		{
-			id: "rustic:book",
-			Count: 1 as byte, 
-			tag: {"akashictome:definedMod": "rustic"}, 
-			Damage: 0 as short
-		}, 
-		va:
-		{
-			id: "va:vaguide",
-			Count: 1 as byte, 
-			tag: {"akashictome:definedMod": "va"}, 
 			Damage: 0 as short
 		}
 	}
