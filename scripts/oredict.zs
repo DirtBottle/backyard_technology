@@ -16,6 +16,3 @@
 <ore:blockWoolGreen>.add(<energeticsheep:energetic_wool:13>);
 <ore:blockWoolRed>.add(<energeticsheep:energetic_wool:14>);
 <ore:blockWoolBlack>.add(<energeticsheep:energetic_wool:15>);
-<ore:oreWool>.addAll(<ore:blockWool>);
-<ore:oreWool>.add(<thermalfoundation:rockwool:*>);
-<ore:dustWool>.add(<minecraft:string>);
