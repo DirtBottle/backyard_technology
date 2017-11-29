@@ -10,6 +10,8 @@ An attempt at making a minecraft modpack
 	[Remove] Forgiving Void
 	[Remove] Optifine
 	Advanced Rocketry [if libvulpe ores are configureable]
+	JustTheTips [if custom tips are implemented]
+	[Remove] World Stripper
 2. Check for modpack Permissions of mods
 3. Config Change
 	MooFluids:

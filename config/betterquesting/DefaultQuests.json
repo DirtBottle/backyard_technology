@@ -1,0 +1,1129 @@
+{
+  "questSettings": {
+    "betterquesting": {
+      "livesdef": 3,
+      "home_anchor_y": 0.0,
+      "livesmax": 10,
+      "home_anchor_x": 0.5,
+      "editmode": true,
+      "hardcore": false,
+      "home_image": "betterquesting:textures/gui/default_title.png",
+      "home_offset_x": -128,
+      "home_offset_y": 0
+    }
+  },
+  "questDatabase": [
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "minecraft:log",
+            "Count": 8,
+            "OreDict": "logWood",
+            "Damage": 0
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": true,
+          "name": "Getting Wood",
+          "desc": "You know what to do. If not, punch wood."
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": true,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "minecraft:log",
+              "Count": 8,
+              "OreDict": "logWood",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:retrieval",
+          "index": 0
+        }
+      ],
+      "rewards": [
+        {
+          "rewards": [
+            {
+              "id": "akashictome:tome",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0,
+              "tag": {
+                "akashictome:data:10": {
+                  "tconstruct:10": {
+                    "tag:10": {
+                      "akashictome:definedMod:8": "tconstruct"
+                    },
+                    "id:8": "tconstruct:book",
+                    "Count:1": 1,
+                    "Damage:2": 0
+                  },
+                  "vc2:10": {
+                    "tag:10": {
+                      "akashictome:definedMod:8": "vc2"
+                    },
+                    "id:8": "vc:guidebook_paint",
+                    "Count:1": 1,
+                    "Damage:2": 0
+                  },
+                  "vc1:10": {
+                    "tag:10": {
+                      "akashictome:definedMod:8": "vc1"
+                    },
+                    "id:8": "vc:guidebook_control",
+                    "Count:1": 1,
+                    "Damage:2": 0
+                  },
+                  "immersiveengineering:10": {
+                    "tag:10": {
+                      "akashictome:definedMod:8": "immersiveengineering"
+                    },
+                    "id:8": "immersiveengineering:tool",
+                    "Count:1": 1,
+                    "Damage:2": 3
+                  },
+                  "vc3:10": {
+                    "tag:10": {
+                      "akashictome:definedMod:8": "vc3"
+                    },
+                    "id:8": "vc:guidebook_socket",
+                    "Count:1": 1,
+                    "Damage:2": 0
+                  },
+                  "va:10": {
+                    "tag:10": {
+                      "akashictome:definedMod:8": "va"
+                    },
+                    "id:8": "va:vaguide",
+                    "Count:1": 1,
+                    "Damage:2": 0
+                  },
+                  "rftools:10": {
+                    "tag:10": {
+                      "akashictome:definedMod:8": "rftools"
+                    },
+                    "id:8": "rftools:rftools_manual",
+                    "Count:1": 1,
+                    "Damage:2": 0
+                  },
+                  "vc:10": {
+                    "tag:10": {
+                      "akashictome:definedMod:8": "vc"
+                    },
+                    "id:8": "vc:guidebook_main",
+                    "Count:1": 1,
+                    "Damage:2": 0
+                  },
+                  "rftools1:10": {
+                    "tag:10": {
+                      "akashictome:definedMod:8": "rftools1"
+                    },
+                    "id:8": "rftools:rftools_shape_manual",
+                    "Count:1": 1,
+                    "Damage:2": 0
+                  },
+                  "rustic:10": {
+                    "tag:10": {
+                      "akashictome:definedMod:8": "rustic"
+                    },
+                    "id:8": "rustic:book",
+                    "Count:1": 1,
+                    "Damage:2": 0
+                  },
+                  "extrautils2:10": {
+                    "tag:10": {
+                      "akashictome:definedMod:8": "extrautils2"
+                    },
+                    "id:8": "extrautils2:book",
+                    "Count:1": 1,
+                    "Damage:2": 0
+                  },
+                  "xnet:10": {
+                    "tag:10": {
+                      "akashictome:definedMod:8": "xnet"
+                    },
+                    "id:8": "xnet:xnet_manual",
+                    "Count:1": 1,
+                    "Damage:2": 0
+                  },
+                  "magneticraft:10": {
+                    "tag:10": {
+                      "akashictome:definedMod:8": "magneticraft"
+                    },
+                    "id:8": "magneticraft:guide_book",
+                    "Count:1": 1,
+                    "Damage:2": 0
+                  }
+                }
+              }
+            },
+            {
+              "id": "bq_standard:loot_chest",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 101
+            }
+          ],
+          "rewardID": "bq_standard:item",
+          "index": 0
+        },
+        {
+          "amount": 1,
+          "isLevels": true,
+          "rewardID": "bq_standard:xp",
+          "index": 1
+        }
+      ],
+      "preRequisites": [],
+      "questID": 0
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "tconstruct:tooltables",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 3
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": true,
+          "name": "Basic Tinkering",
+          "desc": "Okay, maybe not as always. Remember that §1Akashic Tome§r I just gave you? Open it and click on §1Materials And You§r. You\u0027ll know what I\u0027m talking about.\n\n§4You can always left click in mid-air (targeting nothing) while holding the tome to revert it to the book selection page."
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": true,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "tconstruct:tooltables",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "tconstruct:tooltables",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 1,
+              "tag": {
+                "textureBlock:10": {
+                  "id:8": "minecraft:planks",
+                  "Count:1": 1,
+                  "Damage:2": 0
+                }
+              }
+            },
+            {
+              "id": "tconstruct:tooltables",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 4
+            },
+            {
+              "id": "tconstruct:tooltables",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 2,
+              "tag": {
+                "textureBlock:10": {
+                  "id:8": "minecraft:log",
+                  "Count:1": 1,
+                  "Damage:2": 0
+                }
+              }
+            },
+            {
+              "id": "tconstruct:tooltables",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 3
+            }
+          ],
+          "taskID": "bq_standard:retrieval",
+          "index": 0
+        }
+      ],
+      "rewards": [
+        {
+          "choices": [
+            {
+              "id": "minecraft:diamond",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "tconstruct:sharpening_kit",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0,
+              "tag": {
+                "Material:8": "obsidian"
+              }
+            },
+            {
+              "id": "tconstruct:materials",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 19
+            },
+            {
+              "id": "tconstruct:materials",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 16
+            },
+            {
+              "id": "oeintegration:excavatemodifier",
+              "Count": 25,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "tconstruct:materials",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 50
+            }
+          ],
+          "rewardID": "bq_standard:choice",
+          "index": 0
+        },
+        {
+          "amount": 1,
+          "isLevels": true,
+          "rewardID": "bq_standard:xp",
+          "index": 1
+        }
+      ],
+      "preRequisites": [
+        0
+      ],
+      "questID": 1
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "tconstruct:slime_boots",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": false,
+          "name": "Early Game Fast Travel",
+          "desc": "Is that an §1island§r in the sky? It appears that §1slimes§r are falling down from it.\n\n§4JEI (on the right of your inventory screen) is your best friend when it comes to searching for recipes."
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": true,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "tconstruct:slime_boots",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:retrieval",
+          "index": 0
+        }
+      ],
+      "rewards": [
+        {
+          "rewards": [
+            {
+              "id": "tconstruct:slimesling",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "rewardID": "bq_standard:item",
+          "index": 0
+        },
+        {
+          "amount": 5,
+          "isLevels": true,
+          "rewardID": "bq_standard:xp",
+          "index": 1
+        }
+      ],
+      "preRequisites": [
+        1
+      ],
+      "questID": 2
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "tconstruct:toolforge",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0,
+            "tag": {
+              "textureBlock:10": {
+                "id:8": "minecraft:iron_block",
+                "Count:1": 1,
+                "Damage:2": 0
+              }
+            }
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": false,
+          "name": "Advanced Tinkering",
+          "desc": "You can\u0027t just use you hand to mold metals. Go get some §1grout§r and smelt them down."
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": true,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "tconstruct:smeltery_controller",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "tconstruct:smeltery_io",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "tconstruct:faucet",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "tconstruct:seared_tank",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "tconstruct:casting",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "tconstruct:casting",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 1
+            },
+            {
+              "id": "tconstruct:seared",
+              "Count": 18,
+              "OreDict": "",
+              "Damage": 3
+            },
+            {
+              "id": "tconstruct:toolforge",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0,
+              "tag": {
+                "textureBlock:10": {
+                  "id:8": "minecraft:iron_block",
+                  "Count:1": 1,
+                  "Damage:2": 0
+                }
+              }
+            }
+          ],
+          "taskID": "bq_standard:retrieval",
+          "index": 0
+        },
+        {
+          "amount": 10,
+          "isLevels": true,
+          "consume": true,
+          "taskID": "bq_standard:xp",
+          "index": 1
+        }
+      ],
+      "rewards": [
+        {
+          "rewards": [
+            {
+              "id": "tconstruct:seared",
+              "Count": 60,
+              "OreDict": "",
+              "Damage": 3
+            },
+            {
+              "id": "tconstruct:cast",
+              "Count": 8,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "extrautils2:drum",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 1,
+              "tag": {
+                "Fluid:10": {
+                  "FluidName:8": "lava",
+                  "Amount:3": 16000
+                }
+              }
+            }
+          ],
+          "rewardID": "bq_standard:item",
+          "index": 0
+        },
+        {
+          "amount": 10,
+          "isLevels": true,
+          "rewardID": "bq_standard:xp",
+          "index": 1
+        }
+      ],
+      "preRequisites": [
+        7
+      ],
+      "questID": 3
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "morefurnaces:furnaceblock",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": true,
+          "name": "Better Furnaces",
+          "desc": "No more fuel waste, as long as you know how to do it."
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": false,
+          "ignoreNBT": false,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "morefurnaces:furnaceblock",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:retrieval",
+          "index": 0
+        }
+      ],
+      "rewards": [
+        {
+          "rewards": [
+            {
+              "id": "morefurnaces:upgrade",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 2
+            }
+          ],
+          "rewardID": "bq_standard:item",
+          "index": 0
+        },
+        {
+          "amount": 1,
+          "isLevels": true,
+          "rewardID": "bq_standard:xp",
+          "index": 1
+        }
+      ],
+      "preRequisites": [
+        7
+      ],
+      "questID": 4
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "adchimneys:cobblestone",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0
+          },
+          "globalshare": false,
+          "questlogic": "OR",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": false,
+          "name": "Decorative Already?",
+          "desc": "Notice that there are some smoke particles around your furnaces? You can redirect them using §1chimeys§0. After all, that\u0027s what they\u0027re for, right?"
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": true,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "adchimneys:cobblestone",
+              "Count": 8,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:retrieval",
+          "index": 0
+        }
+      ],
+      "rewards": [
+        {
+          "rewards": [
+            {
+              "id": "adchimneys:cobblestone",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 1
+            },
+            {
+              "id": "adchimneys:cobblestone",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 2
+            }
+          ],
+          "rewardID": "bq_standard:item",
+          "index": 0
+        },
+        {
+          "amount": 5,
+          "isLevels": true,
+          "rewardID": "bq_standard:xp",
+          "index": 1
+        }
+      ],
+      "preRequisites": [
+        4
+      ],
+      "questID": 5
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "ironbackpacks:backpack",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0,
+            "tag": {
+              "packInfo:10": {
+                "upgrade:9": {},
+                "type:8": "ironbackpacks:iron",
+                "spec:8": "STORAGE"
+              }
+            }
+          },
+          "globalshare": false,
+          "questlogic": "OR",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": false,
+          "name": "Inventory Management",
+          "desc": "Such a pain."
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": true,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "ironbackpacks:backpack",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0,
+              "tag": {
+                "packInfo:10": {
+                  "upgrade:9": {},
+                  "type:8": "ironbackpacks:iron",
+                  "spec:8": "STORAGE"
+                }
+              }
+            }
+          ],
+          "taskID": "bq_standard:retrieval",
+          "index": 0
+        }
+      ],
+      "rewards": [
+        {
+          "choices": [
+            {
+              "id": "ironbackpacks:upgrade",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0,
+              "tag": {
+                "upgrade:8": "ironbackpacks:damage_bar"
+              }
+            },
+            {
+              "id": "ironbackpacks:upgrade",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0,
+              "tag": {
+                "upgrade:8": "ironbackpacks:lock"
+              }
+            },
+            {
+              "id": "ironbackpacks:upgrade",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0,
+              "tag": {
+                "upgrade:8": "ironbackpacks:extra_upgrade"
+              }
+            },
+            {
+              "id": "minecraft:gold_ingot",
+              "Count": 7,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "rewardID": "bq_standard:choice",
+          "index": 0
+        },
+        {
+          "amount": 1,
+          "isLevels": true,
+          "rewardID": "bq_standard:xp",
+          "index": 1
+        }
+      ],
+      "preRequisites": [
+        7
+      ],
+      "questID": 6
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "minecraft:iron_ore",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": true,
+          "name": "Go Get Some Ores",
+          "desc": "What is Minecraft without mining? Luckily, most §1ores§r are easier to find in this pack. Check §1JEI§r to see where they spawn."
+        }
+      },
+      "tasks": [
+        {
+          "blocks": [
+            {
+              "blockID": "minecraft:coal_ore",
+              "meta": -1,
+              "nbt": {},
+              "amount": 24,
+              "oreDict": "oreCoal"
+            },
+            {
+              "blockID": "minecraft:iron_ore",
+              "meta": -1,
+              "nbt": {},
+              "amount": 12,
+              "oreDict": "oreIron"
+            }
+          ],
+          "taskID": "bq_standard:block_break",
+          "index": 0
+        }
+      ],
+      "rewards": [
+        {
+          "rewards": [
+            {
+              "id": "minecraft:furnace",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "rewardID": "bq_standard:item",
+          "index": 0
+        },
+        {
+          "amount": 1,
+          "isLevels": true,
+          "rewardID": "bq_standard:xp",
+          "index": 1
+        }
+      ],
+      "preRequisites": [
+        1
+      ],
+      "questID": 7
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "aroma1997sdimension:portaligniter",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": true,
+          "name": "Environment-Friendly Mining",
+          "desc": "You really don\u0027t need to hollow the ground beneath to get your diamond piece."
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": true,
+          "groupDetect": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "aroma1997sdimension:portalframe",
+              "Count": 10,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:retrieval",
+          "index": 0
+        }
+      ],
+      "rewards": [
+        {
+          "rewards": [
+            {
+              "id": "aroma1997sdimension:portalframe",
+              "Count": 4,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "tconstruct:materials",
+              "Count": 5,
+              "OreDict": "",
+              "Damage": 14
+            }
+          ],
+          "rewardID": "bq_standard:item",
+          "index": 0
+        },
+        {
+          "amount": 5,
+          "isLevels": true,
+          "rewardID": "bq_standard:xp",
+          "index": 1
+        }
+      ],
+      "preRequisites": [
+        7
+      ],
+      "questID": 8
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "appliedenergistics2:grindstone",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": false,
+          "name": "Starting the Grind",
+          "desc": "Until you get your power going."
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": true,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "appliedenergistics2:grindstone",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "appliedenergistics2:crank",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:retrieval",
+          "index": 0
+        }
+      ],
+      "rewards": [
+        {
+          "rewards": [
+            {
+              "id": "appliedenergistics2:crank",
+              "Count": 4,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "appliedenergistics2:material",
+              "Count": 4,
+              "OreDict": "",
+              "Damage": 1
+            }
+          ],
+          "rewardID": "bq_standard:item",
+          "index": 0
+        },
+        {
+          "amount": 1,
+          "isLevels": true,
+          "rewardID": "bq_standard:xp",
+          "index": 1
+        }
+      ],
+      "preRequisites": [
+        7
+      ],
+      "questID": 9
+    }
+  ],
+  "questLines": [
+    {
+      "properties": {
+        "betterquesting": {
+          "name": "Getting Started, As Always",
+          "bg_image": "",
+          "bg_size": 256,
+          "desc": ""
+        }
+      },
+      "quests": [
+        {
+          "size": 24,
+          "x": -186,
+          "y": 42,
+          "id": 0
+        },
+        {
+          "size": 24,
+          "x": -144,
+          "y": 42,
+          "id": 1
+        },
+        {
+          "size": 24,
+          "x": -144,
+          "y": 12,
+          "id": 2
+        },
+        {
+          "size": 24,
+          "x": -144,
+          "y": 72,
+          "id": 3
+        },
+        {
+          "size": 24,
+          "x": -60,
+          "y": 42,
+          "id": 4
+        },
+        {
+          "size": 24,
+          "x": -60,
+          "y": 12,
+          "id": 5
+        },
+        {
+          "size": 24,
+          "x": -102,
+          "y": 12,
+          "id": 6
+        },
+        {
+          "size": 24,
+          "x": -102,
+          "y": 42,
+          "id": 7
+        },
+        {
+          "size": 24,
+          "x": -102,
+          "y": 84,
+          "id": 8
+        },
+        {
+          "size": 24,
+          "x": -60,
+          "y": 72,
+          "id": 9
+        }
+      ],
+      "lineID": 0,
+      "order": 0
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "name": "Storage Solutions",
+          "bg_image": "",
+          "bg_size": 256,
+          "desc": ""
+        }
+      },
+      "quests": [],
+      "lineID": 1,
+      "order": 1
+    }
+  ],
+  "format": "1.0.0"
+}
