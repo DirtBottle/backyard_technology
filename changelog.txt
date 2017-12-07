@@ -1,4 +1,4 @@
-Started the first draft of quest lines
-Moved the free Akashic Tome from bonus chest to the reward of first quest
-Modified default world gen options
-Added missing string resources of enchantment descriptions for en_us
+Disabled some materials from PlusTiC & MoarTinkers
+Added pack info (Pack In Progress) to Mercurius.cfg
+Disabled MooFluids
+Added Wizardry

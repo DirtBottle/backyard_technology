@@ -14,6 +14,6 @@ enchantment.cofhcore.smelting.desc=[Similar to Fiery Aura] Makes tools instantly
 enchantment.cofhcore.vorpal.desc=When enchented on maps and compasses, teleports the player to their target: for normal compass to the spawn point, for Giacomo's Compass to the bound place, for new maps to the place where map was opened, for old maps to the center of the map, for explorer maps to the decoration. Compasses only work in surface world and maps only in their own dimension.
 enchantment.withsprinkles.exchange.desc=Replaces the block you break with the block in your off hand when not sneaking.
 enchantment.withsprinkles.fiery.desc=[Similar to Smelting] Attempts to smelt the block mined when using the correct tool.
-enchantment.withsprinkles.multiple.desc=Allows you to enchant your item for multiple times. Shift + Right-Click to change mode. You MUST set item to MODE 1 to upgrade this enchantment.
+enchantment.withsprinkles.multiple.desc=Allows your item to have multiple sets of enchantment. Shift + Right-Click to change mode. You MUST set item to MODE 1 to upgrade this enchantment.
 enchantment.withsprinkles.felling.desc=Chops down entire trees or any connected logs with one swing.
 enchantment.withsprinkles.fracking.desc=[Similar to Excavate] Mines out an entire ore vein as long as the ores blocks are connected.

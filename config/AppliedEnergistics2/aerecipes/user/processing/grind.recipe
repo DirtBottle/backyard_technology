@@ -34,3 +34,4 @@ grind= energeticsheep:energetic_wool:12 -> 4 mc:string
 grind= energeticsheep:energetic_wool:13 -> 4 mc:string
 grind= energeticsheep:energetic_wool:14 -> 4 mc:string
 grind= energeticsheep:energetic_wool:15 -> 4 mc:string
+grind= evilcraft:dark_gem -> evilcraft:dark_gem_crushed

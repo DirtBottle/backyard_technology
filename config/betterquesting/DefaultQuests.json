@@ -66,12 +66,21 @@
               "OreDict": "",
               "Damage": 0,
               "tag": {
+                "akashictome:is_morphing:1": 1,
                 "akashictome:data:10": {
                   "tconstruct:10": {
                     "tag:10": {
                       "akashictome:definedMod:8": "tconstruct"
                     },
                     "id:8": "tconstruct:book",
+                    "Count:1": 1,
+                    "Damage:2": 0
+                  },
+                  "evilcraft:10": {
+                    "tag:10": {
+                      "akashictome:definedMod:8": "evilcraft"
+                    },
+                    "id:8": "evilcraft:origins_of_darkness",
                     "Count:1": 1,
                     "Damage:2": 0
                   },
@@ -88,6 +97,19 @@
                       "akashictome:definedMod:8": "vc1"
                     },
                     "id:8": "vc:guidebook_control",
+                    "Count:1": 1,
+                    "Damage:2": 0
+                  },
+                  "wizardry:10": {
+                    "tag:10": {
+                      "akashictome:displayName:8": "Spellforger\u0027s Codex",
+                      "akashictome:definedMod:8": "wizardry",
+                      "akashictome:is_morphing:1": 1,
+                      "display:10": {
+                        "Name:8": "§rAkashic Tome (§aSpellforger\u0027s Codex§r)"
+                      }
+                    },
+                    "id:8": "wizardry:book",
                     "Count:1": 1,
                     "Damage:2": 0
                   },
@@ -160,14 +182,6 @@
                       "akashictome:definedMod:8": "xnet"
                     },
                     "id:8": "xnet:xnet_manual",
-                    "Count:1": 1,
-                    "Damage:2": 0
-                  },
-                  "magneticraft:10": {
-                    "tag:10": {
-                      "akashictome:definedMod:8": "magneticraft"
-                    },
-                    "id:8": "magneticraft:guide_book",
                     "Count:1": 1,
                     "Damage:2": 0
                   }
